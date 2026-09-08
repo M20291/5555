@@ -1,0 +1,24 @@
+{
+  "name": "magnet-to-drive",
+  "version": "1.0.0",
+  "description": "Download torrents from magnet links and upload to Google Drive",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "render",
+    "torrent",
+    "magnet",
+    "google-drive"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "googleapis": "^178.1.1",
+    "webtorrent": "^3.0.21"
+  }
+}
