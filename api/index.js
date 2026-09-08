@@ -26,7 +26,7 @@ async function getDriveClient() {
 }
 
 // Download torrent from magnet link
-async function downloadFromMagnet(magnetUri, timeout = 300000) {
+async function downloadFromMagnet(magnetUri, timeout = 900000) {
   return new Promise((resolve, reject) => {
     const client = new WebTorrent();
     
@@ -138,7 +138,7 @@ export async function magnetHandler(req, res) {
     
     // Download from magnet
     const { buffer, fileName: downloadedFileName, mimeType: downloadedMimeType } = 
-      await downloadFromMagnet(magnetUri, timeout || 300000);
+      await downloadFromMagnet(magnetUri, timeout || 900000);
 
     console.log('Download completed, uploading to Drive...');
 
