@@ -2,7 +2,7 @@ import http from 'http';
 
 const PORT = process.env.PORT || 3000;
 
-const htmlTemplate = \<!DOCTYPE html>
+const htmlTemplate = <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8">
@@ -91,7 +91,7 @@ const htmlTemplate = \<!DOCTYPE html>
     }
   </script>
 </body>
-</html>\;
+</html>;
 
 const server = http.createServer((req, res) => {
   // CORS headers
@@ -135,7 +135,7 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(\🚀 שרת מינימלי רץ על port \\);
-  console.log(\🌐 גישה מקומית: http://localhost:\\);
-  console.log(\⏰ זמן הפעלה: \\);
+  console.log(🚀 שרת מינימלי רץ על port );
+  console.log(🌐 גישה מקומית: http://localhost:);
+  console.log(⏰ זמן הפעלה: );
 });
