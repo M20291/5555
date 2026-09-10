@@ -1,0 +1,19 @@
+{
+  "name": "Minimal Server",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-typescript-next"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install && npm run simple",
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Server",
+      "onAutoForward": "notify"
+    }
+  }
+}
