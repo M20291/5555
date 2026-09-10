@@ -8,7 +8,7 @@
       ]
     }
   },
-  "postCreateCommand": "chmod +x start.sh && nohup bash start.sh > server.log 2>&1 &",
+  "postCreateCommand": "npm install",
   "forwardPorts": [3000],
   "portsAttributes": {
     "3000": {
